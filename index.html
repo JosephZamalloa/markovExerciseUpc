@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+
+      <h1>Modelo de Leslie</h1>
+      <h3>Evolución de una población estructurada</h4>
+    </div>
+    <h4>Inserta tus datos</h4>
+    <div class="selectorClass">
+      <h2>Selecciona el orden de la matriz:</h2>
+      <select id="matrix-order" onchange="changeMatrixOrder()">
+        <option>selecciona aqui...</option>
+        <option value="3">ORDEN 3</option>
+        <option value="4">ORDEN 4</option>
+        <option value="5">ORDEN 5</option>
+      </select>
+    </div>
+    <div class="form-container">
+      <form action="" class="leslieForm">
+        <div class="matrixA-container">
+          <h2>Datos proporcionales</h2>
+          <div id="matrixA" class="matrix">
+          </div>
+        </div>
+        <div class="matrixB-container">
+          <h2>Vector</h2>
+          <div id="matrixB" class="matrix">
+          </div>
+        </div>
+        <div>
+          <h2>Años</h2>
+          <input type="number" name="years" id="years" />
+        </div>
+      </form>
+    </div>
+
+    <button onclick="calculateMatrix()">Multiplicar</button>
+    <div class="resultSection">
+
+      <h1>Resultados</h1>
+      <div id="results">
+        <div class="resultContainer">
+          <div>Aqui se mostraran los resultados obtenidos</div>
+        </div>`
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
